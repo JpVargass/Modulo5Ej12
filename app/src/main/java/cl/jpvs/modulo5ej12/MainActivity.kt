@@ -37,7 +37,7 @@ fun main() {
 
         var correo = readln()
         var sistemaSalud = readln()
-        var usuario = Usuario(nombre, apellidos, edad, correo, sistemaSalud)
+        var usuario = Usuario( nombre,  apellidos, edad, correo, sistemaSalud)
         usuarios.add(usuario)
     }
     for (u in usuarios) {
@@ -69,9 +69,9 @@ fun  validarEdad(edad:String): Boolean {
 }
 
 data class Usuario(
-    var nombre : String,
-    var apellidos: String,
-    var edad:Int,
-    var correo: String,
-    var sistemaSalud : String  )
+    val nombre : String,
+    val apellidos: String,
+    val edad:Int,
+    val correo: String,
+    val sistemaSalud : String  )
 
